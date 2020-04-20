@@ -1,0 +1,41 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 10% 75% 15%;
+  grid-template-areas: "header-nav_bar header-main header-menu";
+  grid-template-rows: 600px;
+  background-image: url("../images/main_page_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header-nav_bar {
+  grid-area: header-nav_bar;
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  grid-template-areas: "logo menu register";
+}
+
+.header-nav_bar .nav_bar__logo {
+  grid-area: logo;
+}
+
+.header-nav_bar .nav_bar__menu {
+  grid-area: menu;
+}
+
+.header-nav_bar .nav_bar__register {
+  grid-area: register;
+}
+
+.header-main {
+  grid-area: header-main;
+}
+
+.header-menu {
+  grid-area: header-menu;
+}
+/*# sourceMappingURL=style.css.map */

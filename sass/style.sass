@@ -1,0 +1,28 @@
+*, *:before, *:after
+	box-sizing: border-box
+
+$header-bg: url('../images/main_page_bg.png')
+
+.header
+    display: grid
+    grid-template-columns: 10% 75% 15%
+    grid-template-areas: "header-nav_bar header-main header-menu"
+    grid-template-rows: 600px
+    background-image: $header-bg
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    &-nav_bar
+        grid-area: header-nav_bar
+        display: grid
+        grid-template-rows: 20% 70% 10%
+        grid-template-areas: "logo menu register"     
+        .nav_bar__logo
+            grid-area: logo
+        .nav_bar__menu
+            grid-area: menu
+        .nav_bar__register
+            grid-area: register  
+    &-main
+        grid-area: header-main 
+    &-menu
+        grid-area: header-menu       
